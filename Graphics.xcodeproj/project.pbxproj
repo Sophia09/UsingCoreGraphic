@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783F2924199C531400E1D657 /* OleoScriptSwashCaps-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 783F2923199C531400E1D657 /* OleoScriptSwashCaps-Bold.ttf */; };
+		783F2926199C5E0D00E1D657 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 783F2925199C5E0D00E1D657 /* README.md */; };
 		78E163251999F4FB0033C11E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163241999F4FB0033C11E /* Foundation.framework */; };
 		78E163271999F4FB0033C11E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163261999F4FB0033C11E /* CoreGraphics.framework */; };
 		78E163291999F4FB0033C11E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163281999F4FB0033C11E /* UIKit.framework */; };
@@ -21,6 +23,7 @@
 		78E163461999F4FB0033C11E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E163281999F4FB0033C11E /* UIKit.framework */; };
 		78E1634E1999F4FB0033C11E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78E1634C1999F4FB0033C11E /* InfoPlist.strings */; };
 		78E163501999F4FB0033C11E /* GraphicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1634F1999F4FB0033C11E /* GraphicsTests.m */; };
+		78E1635C1999F6FC0033C11E /* GraphicsRecipesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E1635B1999F6FC0033C11E /* GraphicsRecipesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		783F2923199C531400E1D657 /* OleoScriptSwashCaps-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OleoScriptSwashCaps-Bold.ttf"; sourceTree = "<group>"; };
+		783F2925199C5E0D00E1D657 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		78E163211999F4FB0033C11E /* Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E163241999F4FB0033C11E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78E163261999F4FB0033C11E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,8 @@
 		78E1634B1999F4FB0033C11E /* GraphicsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphicsTests-Info.plist"; sourceTree = "<group>"; };
 		78E1634D1999F4FB0033C11E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78E1634F1999F4FB0033C11E /* GraphicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphicsTests.m; sourceTree = "<group>"; };
+		78E1635A1999F6FC0033C11E /* GraphicsRecipesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsRecipesView.h; sourceTree = "<group>"; };
+		78E1635B1999F6FC0033C11E /* GraphicsRecipesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsRecipesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,8 @@
 		78E1632A1999F4FB0033C11E /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				783F2925199C5E0D00E1D657 /* README.md */,
+				78E163591999F6E60033C11E /* customizedView */,
 				78E163331999F4FB0033C11E /* AppDelegate.h */,
 				78E163341999F4FB0033C11E /* AppDelegate.m */,
 				78E163361999F4FB0033C11E /* Main.storyboard */,
@@ -126,6 +135,7 @@
 		78E1632B1999F4FB0033C11E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				783F2923199C531400E1D657 /* OleoScriptSwashCaps-Bold.ttf */,
 				78E1632C1999F4FB0033C11E /* Graphics-Info.plist */,
 				78E1632D1999F4FB0033C11E /* InfoPlist.strings */,
 				78E163301999F4FB0033C11E /* main.m */,
@@ -150,6 +160,15 @@
 				78E1634C1999F4FB0033C11E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78E163591999F6E60033C11E /* customizedView */ = {
+			isa = PBXGroup;
+			children = (
+				78E1635A1999F6FC0033C11E /* GraphicsRecipesView.h */,
+				78E1635B1999F6FC0033C11E /* GraphicsRecipesView.m */,
+			);
+			name = customizedView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +248,9 @@
 			files = (
 				78E1633D1999F4FB0033C11E /* Images.xcassets in Resources */,
 				78E1632F1999F4FB0033C11E /* InfoPlist.strings in Resources */,
+				783F2926199C5E0D00E1D657 /* README.md in Resources */,
 				78E163381999F4FB0033C11E /* Main.storyboard in Resources */,
+				783F2924199C531400E1D657 /* OleoScriptSwashCaps-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +272,7 @@
 				78E1633B1999F4FB0033C11E /* ViewController.m in Sources */,
 				78E163351999F4FB0033C11E /* AppDelegate.m in Sources */,
 				78E163311999F4FB0033C11E /* main.m in Sources */,
+				78E1635C1999F6FC0033C11E /* GraphicsRecipesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +481,7 @@
 				78E163551999F4FB0033C11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78E163561999F4FB0033C11E /* Build configuration list for PBXNativeTarget "GraphicsTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +490,7 @@
 				78E163581999F4FB0033C11E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
